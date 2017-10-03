@@ -116,6 +116,9 @@ plot([0 365],[0 0],'--k')
 xlim([0 365]); xlabel('Day of Water Year'); title('Cum Daily Storage (m^3)')
 t = annotation('textbox', [0 0.9 1 0.1], 'String','Merced Water Balance 2016', 'EdgeColor', 'none', 'HorizontalAlignment', 'center');
 t.FontSize =15;  t.FontWeight = 'bold';
+
+
+
 %% Plot outputs from 2017 model 
 clear all;
 load /Users/yufeiliu/Desktop/CEE150/Data/output/upper_merced_output_Yufei_2017.mat
