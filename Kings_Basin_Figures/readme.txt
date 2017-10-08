@@ -1,0 +1,1 @@
+Created using the MOD-WET setup used in Week 0 recitation section. SDmean0 = 0.17, T0 = 0.06. The MOD-WET model has been corrected to fix the routing bug.

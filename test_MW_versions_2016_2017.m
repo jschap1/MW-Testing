@@ -5,10 +5,10 @@
 % Set up and run 2016b and 2017a simulations for the Upper Merced/Kings basin,
 % water year 20XX. Then load and plot the results.
 
-cd /Users/jschapMac/Documents/Classes/CEE150/Test_Basins/Upper_Merced
+cd('C:\Users\Jacob\Documents\My Documents\Classes\CEE150\')
 
-old = load('/Users/jschapMac/Documents/Classes/CEE150/Test_Basins/Upper_Kings/2016b/kings_output.mat');
-new = load('./2017_CEE251D/merced_output.mat');
+old = load('C:\Users\Jacob\Box Sync\kings_output.mat');
+new = load('./kings_outputs_10022017.mat');
 
 %% TODO
 
@@ -161,12 +161,12 @@ title('snowmelt (old)'), xlabel('DOWY'); ylabel('snowmelt (m/h)')
 set(gca,'FontSize',18)
 
 subplot(m,n,5)
-plot(new.time_vector_for_fluxes_time_series, new.fluxes.time_series.INFIL)
+plot(new.time_vector_for_fluxes_time_series, new.fluxes.time_series.infil)
 title('infil (new)'), xlabel('DOWY'); ylabel('infil (m/h)')
 set(gca,'FontSize',18)
 
 subplot(m,n,6)
-plot(old.time_states(1:end-1), old.time_series.LE)
+plot(old.time_states(1:end-1), old.time_series.infil)
 title('infil (old)'), xlabel('DOWY'); ylabel('infil (m/h)')
 set(gca,'FontSize',18)
 
